@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- Your app title -->
+    <title>My App</title>
+
+  
+
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.min.css">
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+    
+    
+    <!---------- fontawesome------------------------------>
+    <link href="css/fontawesome-free-5.6.3-web/css/all.min.css"  rel="stylesheet">
+    
+        <!---------- framework7-icons ------------------------------>
+     <link href="css/framework7-icons-master/css/framework7-icons.css" rel="stylesheet">
+    
+    
+</head>
+
+<body class="layout-dark color-white">
+    <!-- Status bar overlay for full screen mode (PhoneGap) -->
+    <div class="statusbar-overlay"></div>  <!-- space for the status bar -->
+
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-reveal">
+        <div class="content-block">
+            <p class="color-white">Left panel content goes here</p>
+        </div>
+    </div>
+
+    <!-- Views -->
+    <div class="views">
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Top Navbar-->
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+                    <div class="center sliding">Awesome App</div>
+                    <div class="right">
+                        <!--
+                          Right link contains only icon - additional "icon-only" class
+                          Additional "open-panel" class tells app to open panel when we click on this link
+                        -->
+                        <a href="#" class="link icon-only open-panel"><i class="icon icon-bars color-white"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+            <div class="pages navbar-through toolbar-through">
+                <!-- Page, "data-page" contains page name -->
+                <div data-page="index" class="page">
+                    <!-- Scrollable page content -->
+                    <div class="page-content">
+                        <div class="content-block">
+     <!------------------------------------Page Content Start here------------------------------------------------>
+                
+                            
+                            
+                            
+                  
+                            
+                            
+              <div class="row rj" style="margin-top:50px; margin-bottom: 30px;">
+        <div class="col-25"> <a href="about.html" class="link"><i class="f7-icons size-45">images</i><br>Images</a></div>
+                  <div class="col-25"> <a href="about.html" class="link"><i class="f7-icons size-45">videocam</i><br>Videos</a></div>
+        <div class="col-25"> <a href="about.html" class="link"><i class="f7-icons size-45">tune</i><br>Music</a></div>
+        <div class="col-25"> <a href="about.html" class="link"><i class="f7-icons size-45">download</i><br>Download</a></div>
+        
+    </div>    
+              
+    
+                            
+                            
+             <div class="row rj" style="margin-bottom: 70px;">
+        <div class="col-25"> <a href="about.html" class="link"><i class="f7-icons size-45">star</i><br>Favorite</a></div>
+       <div class="col-25"> <a href="about.html" class="link"><i class="f7-icons size-45">compass</i><br>Compass</a></div>
+        <div class="col-25"> <a href="about.html" class="link"><i class="f7-icons size-45">gear</i><br>Setting</a></div>
+        <div class="col-25"> <a href="about.html" class="link"><i class="f7-icons size-45">cloud_upload</i><br>Upload</a></div>
+        
+    </div> 
+                            
+                            
+                            
+                            
+                            
+      
+                            
+                        </div> <!----- end of first  content-block  --->                          
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+     <div class="content-block" style=" padding:0 !important;">
+         <div class="row no-gutter co">
+         <div class="col-50">Maps</div>
+         <div class="col-50">Movies</div>
+         </div> 
+          <div class="row no-gutter co">
+         <div class="col-50">Files</div>
+         <div class="col-50">Cloud</div>
+         </div>
+          <div class="row no-gutter co">
+         <div class="col-50">Gallery</div>
+         <div class="col-50">Camera</div>
+         </div>
+    </div>  <!----- end of second content-block  --->  
+                            
+                
+                
+     <!-----------------------------------Page Content Ends here----------------------------------------------------->  
+                        </div>
+                    </div>
+                </div>
+           
+            <!-- Bottom Toolbar-->
+            <div class="toolbar">
+               
+   <!----------------- I removed toolbar-inner ----------------------------->                 
+    <div class="row">
+        <div class="col-25"> <a href="about.html" class="link"><i class="fab fa-apple"></i></a></div>
+       <div class="col-25"> <a href="about.html" class="link"><i class="fab fa-android"></i></a></div>
+        <div class="col-25"> <a href="about.html" class="link"><i class="fab fa-windows"></i></a></div>
+        <div class="col-25"> <a href="page3.html" class="link"><i class="fab fa-github"></i></a></div>
+        
+    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+</body>
+
+</html>
